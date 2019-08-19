@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 .topspace {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 .bottomspace {
   margin-top: 40px;
@@ -68,28 +68,28 @@ body {
   padding: 5px 30px;
 }
 .navbar-default {
-  background-color: #ffffff;
-  border-color: #cccccc;
+  background-color: #fec000;
+  border-color: #fec000;
 }
 .navbar-default .navbar-nav > li > a {
   color: #454545;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000000;
-  background-color: #ffffff;
+  color: whitesmoke;
+  background-color: #fec000;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #000000;
-  background-color: #ffffff;
+  color: #A5A5B1;
+  background-color: #fec000;
 }
 .navbar-default .dropdown ul.dropdown-menu > li > a {
   color: #454545;
 }
 .navbar-default .dropdown ul.dropdown-menu > li > a:hover {
-  background-color: #eeeeee;
+  background-color: #fec000;
   color: #000000;
 }
 .navbar-default .navbar-toggle {
@@ -97,19 +97,19 @@ body {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
+  background-color: #fec000;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #333333;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #cccccc;
+  border-color: #fec000;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #ffffff;
+  background-color: #fec000;
   color: #000000;
 }
 /****************************************************************************************
@@ -131,11 +131,11 @@ body {
   color: #f392b4;
 }
 .nav-side > li > a:hover {
-  color: #bd1550;
+  color: #01524B;
   background: none;
 }
 .nav-side > li.active > a {
-  color: #bd1550;
+  color: #01524B;
 }
 /*********************************************************************
 
@@ -195,10 +195,10 @@ h5 {
   font-size: 1.25rem;
 }
 a {
-  color: #bd1550;
+  color: #FF481B;
 }
 a:hover {
-  color: #e93675;
+  color: #98D2D5;
 }
 .lead {
   font-weight: 300;
@@ -228,21 +228,23 @@ a:hover {
 
 **********************************************************************/
 #head {
-  background: #f4f4f4 url(../images/bg_head.jpg) top center;
+  background: #f4f4f4 url(../images/lightbulb3.png);
   background-size: cover;
-  color: #7C7C7C;
-  padding: 30px 0 35px 0;
+  background-repeat: no-repeat;
+  padding: 0px 0 0px 0;
+  background-color: #fec000;
+  height: 500px
 }
-#head img.img-circle {
+/* #head img.img-circle {
   display: block;
   width: 140px;
   height: 140px;
   overflow: hidden;
   border: 9px solid rgba(0, 0, 0, 0.05);
   margin: 0 auto;
-}
+} */
 #head .title {
-  font-family: Alice, Georgia, serif;
+  font-family: "Open sans", Helvetica, Arial, sans-serif;;
   font-size: 49px;
   font-size: 3.0625rem;
 }
@@ -286,6 +288,9 @@ a:hover {
 img {
   max-width: 100%;
 }
+.shadow_effect {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .btn {
   font-size: 12px;
   font-size: 0.75rem;
@@ -310,11 +315,11 @@ img {
   transition-duration: 0.2s;
   border: 0 none;
   padding: 12px 35px;
-  text-shadow: 0 1px 0px #780d33;
+  text-shadow: 0 1px 0px rgb(1, 52, 47);
 }
 .btn-primary {
   color: #fff;
-  background-color: #bd1550;
+  background-color: #01524B;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -333,8 +338,8 @@ img {
 .btn-action:focus,
 .btn-action:active,
 .btn-action.active {
-  color: #bd1550;
-  border-color: #bd1550;
+  color: #01524B;
+  border-color: #01524B;
 }
 .btn-lg {
   padding: 15px 60px;
@@ -362,21 +367,6 @@ img {
 .panel-cta .panel-body {
   padding: 35px;
 }
-/* Section - Featured */
-.featured {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-.featured h3 {
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  line-height: 1.4em;
-  vertical-align: middle;
-  margin: 0 0 25px 0;
-}
 /* Section - Recent works */
 .thumbnails {
   padding: 0;
@@ -399,7 +389,7 @@ img {
   border-radius: 0;
   background-clip: padding-box;
   border: 0 none;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   padding: 0;
   text-align: center;
   text-decoration: none;
@@ -410,8 +400,9 @@ img {
   width: auto;
   overflow: hidden;
   height: 180px;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   position: relative;
+  object-fit: cover;
 }
 .thumbnail .title {
   text-transform: uppercase;
@@ -452,8 +443,8 @@ img {
   font-size: 12px;
   font-size: 0.75rem;
   text-transform: uppercase;
-  text-shadow: 0 1px 0px #780d33;
-  background: #bd1550;
+  text-shadow: 0 1px 0px rgb(105, 172, 176);
+  background:#98D2D5;
   color: white;
 }
 .thumbnail img {
@@ -461,6 +452,8 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 3px;
+  height: 180px;
 }
 .thumbnail:hover {
   color: #333;
@@ -496,7 +489,15 @@ img {
 .icon{
   font-size: 30px;
   padding-left: 10px;
-  padding-top: 5px
+  padding-top: 5px; 
+  margin-bottom: 50px
+}
+.logos{
+  height: 300px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 /*********************************************************************
 
@@ -510,17 +511,18 @@ img {
   display: block;
   width: 100%;
   overflow: hidden;
-  margin: 0px 0 25px;
+  margin: 50px 0 50px;
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 36px;
   font-size: 2.25rem;
   letter-spacing: 1px;
+  color: #01524B
 }
 .section-title a,
 .entry-title a {
-  color: #333333;
+  color: #08899E;
 }
 .section-title span,
 .entry-title span {
@@ -536,8 +538,8 @@ img {
   height: 4px;
   top: .53em;
   width: 400%;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #E0DEE2;
+  border-top: 1px solid #E0DEE2;
 }
 .section-title span:before,
 .entry-title span:before {
@@ -710,7 +712,7 @@ footer.entry-meta .meta-in {
   color: #333333;
 }
 #comments .comment-meta a:hover {
-  color: #bd1550;
+  color: #01524B;
 }
 #comments .comment-meta .author {
   margin: 0 20px 0 0;
