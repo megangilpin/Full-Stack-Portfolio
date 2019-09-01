@@ -43,14 +43,18 @@ footer p {
 html {
   font-size: 100%;
 }
+
 body {
   font-size: 15px;
   font-size: 0.9375rem;
-  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #666666;
   padding: 0;
-  background: white;
 }
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
 
 /* Header */
 #head {
@@ -59,36 +63,32 @@ body {
   background-repeat: no-repeat;
   padding: 0px 0 0px 0;
   background-color: #febd00;
-  height: 600px
+  height: 700px
 }
 
 #head .title {
-  font-family: "Open sans", Helvetica, Arial, sans-serif;;
+  font-weight: 400;
+  color: #1186be;
   font-size: 49px;
   font-size: 3.0625rem;
+  margin: 15px 0 0;
 }
-#head .title a {
-  text-decoration: none;
-  color: #333333;
-}
+
 #head .tagline {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.2em;
   color: #7C7C7C;
-  margin: 5px 0 0;
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 15px 0 0;
 }
-#head .tagline b {
-  font-weight: normal;
-}
-#head .tagline a {
-  color: #5E5E5E;
-}
+
 .home #head {
   padding: 90px 0;
 }
-.home #head .title {
+/* .home #head .title {
   font-size: 49px;
   font-size: 3.0625rem;
 }
@@ -96,17 +96,21 @@ body {
   font-size: 16px;
   font-size: 1rem;
   margin: 15px 0 0;
-}
+} */
 
 /* NAVBAR */
 .navbar {
-  background-color: #febd00;
-  border-color: #febd00;
-  color: #454545
+  background-color: white;
+  border-color: white;
+  color: #454545;
+  padding: 10px;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 .nav:hover, .nav:focus{
   color: whitesmoke;
+  text-decoration: none;
 }
 /* selected link */
 .nav:active {
@@ -132,13 +136,12 @@ body {
   display: block;
   width: 100%;
   overflow: hidden;
-  margin: 50px 0 50px;
+  margin: 100px 0 100px;
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 36px;
-  font-size: 2.25rem;
-  letter-spacing: 1px;
+  font-size: 45px;
+  letter-spacing: 3px;
   color: #1186be;
 }
 
@@ -241,6 +244,10 @@ body {
   margin: 0 2em;
   display: block;
   text-indent: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.428571429;
 }
 
 .card-body {
@@ -256,7 +263,6 @@ body {
   padding-left: 10px;
   padding-top: 5px; 
   color: #FF481B;
-  /* margin-bottom: 50px */
 }
 
 .icon:hover {
