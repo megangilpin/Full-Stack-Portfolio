@@ -1,0 +1,245 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/* original CSS */
+
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  color: #666666;
+  padding: 0;
+}
+
+/* Header */
+#head {
+  background: #f4f4f4 url(../images/lightbulb3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 0 0px 0;
+  background-color: #febd00;
+  height: 600px
+}
+
+#head .title {
+  font-family: "Open sans", Helvetica, Arial, sans-serif;;
+  font-size: 49px;
+  font-size: 3.0625rem;
+}
+#head .title a {
+  text-decoration: none;
+  color: #333333;
+}
+#head .tagline {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+  color: #7C7C7C;
+  margin: 5px 0 0;
+}
+#head .tagline b {
+  font-weight: normal;
+}
+#head .tagline a {
+  color: #5E5E5E;
+}
+.home #head {
+  padding: 90px 0;
+}
+.home #head .title {
+  font-size: 49px;
+  font-size: 3.0625rem;
+}
+.home #head .tagline {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 15px 0 0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #febd00;
+  border-color: #febd00;
+  color: #454545
+}
+
+.nav:hover, .nav:focus{
+  color: whitesmoke;
+}
+/* selected link */
+.nav:active {
+  color: #A5A5B1;
+}
+.nav {
+  color: #454545
+}
+
+/*sticky header position*/
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  opacity: .85;
+}
+
+/* Section Titles */
+.section-title {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 50px 0 50px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-size: 2.25rem;
+  letter-spacing: 1px;
+  color: #1186be
+}
+
+/* Adds Double Horizontal Lines */
+.section-title span {
+  display: inline-block;
+  position: relative;
+}
+
+.section-title span:before,
+.section-title span:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: .53em;
+  width: 400%;
+  border-bottom: 1px solid #E0DEE2;
+  border-top: 1px solid #E0DEE2;
+}
+.section-title span:before {
+  right: 100%;
+  margin-right: 45px;
+}
+.section-title span:after {
+  left: 100%;
+  margin-left: 45px;
+}
+
+/* Recent Work Cards */
+.hover_container {
+  position: relative;
+  width: 100%;
+}
+
+.hover_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 550ms;
+  -moz-transition-duration: 550ms;
+  -o-transition-duration: 550ms;
+  transition-duration: 550ms;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover_container:hover .overlay {
+  opacity: 1;
+}
+
+.hover_container:hover .hover_image {
+  opacity: 0.3;
+}
+
+
+.hover_text {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  -webkit-border-radius: 1px 0 0 1px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 1px 0 0 1px;
+  -moz-background-clip: padding;
+  border-radius: 1px 0 0 1px;
+  background-clip: padding-box;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0px rgb(105, 172, 176);
+  background:#98D2D5;
+  color: white;
+}
+
+/* git icon */
+.icon{
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 5px; 
+  /* margin-bottom: 50px */
+}
+
+a {
+  color: #FF481B;
+}
+a:hover {
+  color: #98D2D5;
+}
