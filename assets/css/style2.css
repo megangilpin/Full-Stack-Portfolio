@@ -1,9 +1,10 @@
 :root {
-  --jumbotron-padding-y: 3rem;
+  --jumbotron-padding-top: 5rem;
+  --jumbotron-padding-y: 2rem;
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
+  padding-top: var(--jumbotron-padding-top);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
@@ -19,9 +20,9 @@
   margin-bottom: 0;
 }
 
-.jumbotron-heading {
+/* .jumbotron-heading {
   font-weight: 300;
-}
+} */
 
 .jumbotron .container {
   max-width: 40rem;
@@ -56,14 +57,14 @@ body {
 font-family: 'Raleway', sans-serif; */
 
 
-/* Header */
+/* header */
 #head {
   background: #f4f4f4 url(../images/lightbulb3.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 0 0px 0;
   background-color: #febd00;
-  height: 700px
+  height: 500px
 }
 
 #head .title {
@@ -98,7 +99,7 @@ font-family: 'Raleway', sans-serif; */
   margin: 15px 0 0;
 } */
 
-/* NAVBAR */
+/* navbar */
 .navbar {
   background-color: white;
   border-color: white;
@@ -106,16 +107,14 @@ font-family: 'Raleway', sans-serif; */
   padding: 10px;
   font-weight: 200;
   font-size: 18px;
+  margin-bottom: 100px;
 }
 
-.nav:hover, .nav:focus{
+.nav:hover {
   color:  #1186be;
   text-decoration: none;
 }
-/* selected link */
-.nav:active {
-  color: #A5A5B1;
-}
+
 .nav {
   color: #454545; 
 }
@@ -131,21 +130,21 @@ font-family: 'Raleway', sans-serif; */
   opacity: .85;
 }
 
-/* Section Titles */
+/* section titles */
 .section-title {
   display: block;
   width: 100%;
   overflow: hidden;
-  margin: 100px 0 100px;
+  margin: 50px 0 50px;
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 45px;
-  letter-spacing: 3px;
+  font-size: 40px;
+  /* letter-spacing: 3px; */
   color: #1186be;
 }
 
-/* Adds Double Horizontal Lines */
+/* double lines @ section title */
 .section-title span {
   display: inline-block;
   position: relative;
@@ -158,8 +157,8 @@ font-family: 'Raleway', sans-serif; */
   height: 4px;
   top: .53em;
   width: 400%;
-  border-bottom: 1px solid #E0DEE2;
-  border-top: 1px solid #E0DEE2;
+  /* border-bottom: 1px solid #E0DEE2; */
+  border-top: 3px solid #E0DEE2;
 }
 .section-title span:before {
   right: 100%;
@@ -170,7 +169,7 @@ font-family: 'Raleway', sans-serif; */
   margin-left: 45px;
 }
 
-/* Recent Work Cards */
+/* recent work cards */
 .hover_container {
   position: relative;
   width: 100%;
@@ -257,9 +256,14 @@ font-family: 'Raleway', sans-serif; */
   font-size: 0.75rem;
 }
 
+.card-text {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 /* git icon */
 .icon{
-  font-size: 30px;
+  font-size: 35px;
   padding-left: 10px;
   padding-top: 5px; 
   color: #FF481B;
@@ -300,6 +304,28 @@ font-family: 'Raleway', sans-serif; */
         -ms-transform:skew(8deg) rotate(3deg);
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
+}
+
+/* technical skills */
+.logos{  
+  position: relative;  
+  left: 0;  
+  top: 0;  
+  max-width: 100%;  
+  height: auto;
+}
+
+.technical-title {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  /* margin: 50px 0 50px; */
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  /* letter-spacing: 3px; */
+  color: #333333;
 }
 
 /* footer */
@@ -350,3 +376,40 @@ footer {
   color: #999;
 }
 
+/* modal */
+.modal-title {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 100px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: #1186be;
+}
+
+.modal_bttn {
+  background-color: #1186be;
+  border-color:  #1186be;
+  color: white;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.modal_bttn:hover, .modal_bttn:focus{
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  color: #454545;
+  text-decoration: none;
+}
+
+/* Max page width
+/////////////////////////////////////////////////////////////////////*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
