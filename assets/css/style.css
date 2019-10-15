@@ -274,6 +274,11 @@ font-family: 'Raleway', sans-serif; */
   margin-bottom: 5px;
 }
 
+/* tech list icon */
+.tech{
+  color: #FF481B;
+}
+
 /* git icon */
 .icon{
   font-size: 35px;
